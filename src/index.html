@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html ng-app="angularTestApp">
+<head>
+    <title>Test Template</title>
+
+    <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="../resources/css/default.css" rel="stylesheet" />
+
+    <script src="../resources/js/jquery-2.1.4.min.js"></script>
+    <script src="../resources/js/bootstrap.min.js"></script>
+
+    <script src="../resources/js/angular.min.js"></script>
+    <script src="../resources/js/angular-ui-router-v0.2.13.min.js"></script>
+    <script src="../resources/js/ui-bootstrap-tpls-0.13.3.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="routes.js"></script>
+
+    <script src="modules/login/LoginModule.js"></script>
+    <script src="modules/tasks/TasksModule.js"></script>
+    <script src="modules/navigation/NavigationCtrl.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse ng-scope">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-header">
+                    <a class="navbar-brand">Angular Test App23</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a data-ng-href="#/login"> Login </a></li>
+                    <li><a data-ng-href="#/tasks"> Tasks </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div data-ui-view></div>
+    </div>
+</body>
+</html>
